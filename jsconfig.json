@@ -22,11 +22,18 @@
      * Typecheck JS in `.svelte` and `.js` files by default.
      * Disable this if you'd like to use dynamic types.
      */
-    "checkJs": true
+    "checkJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "$lib/*": ["src/lib/*"],
+      "$objectCreation/*": ["src/lib/examples/object-creation/*"],
+      "$importExamples/*": ["src/lib/examples/importing-3d-models/*"],
+      "threeInstance": ["src/threeInstance"]
+    }
   },
   /**
    * Use global.d.ts instead of compilerOptions.types
    * to avoid limiting type declarations.
    */
-  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": ["src/**/*"]
 }

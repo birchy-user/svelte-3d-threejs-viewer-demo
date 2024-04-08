@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
-    import * as THREE from 'three';
+
+    import THREE from 'threeInstance';
 
     let container;
     let scene;
@@ -90,9 +91,10 @@
     }
 </script>
 
+<h1>#1 - Objektu ģenerēšana pēc lietotāja darbības</h1>
+
 <div class="canvas-wrapper" bind:this={container}></div>
 <button on:click={addCube}>Add Cube</button>
-
 
 <style>
     .canvas-wrapper {
