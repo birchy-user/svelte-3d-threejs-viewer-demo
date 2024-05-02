@@ -26,8 +26,6 @@
     "baseUrl": ".",
     "paths": {
       "$lib/*": ["src/lib/*"],
-      "$objectCreation/*": ["src/lib/examples/object-creation/*"],
-      "$importExamples/*": ["src/lib/examples/importing-3d-models/*"],
       "threeInstance": ["src/threeInstance"]
     }
   },

@@ -15,8 +15,6 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "cannon": "^0.6.2",
-    "svelte-routing": "^2.12.0",
     "three": "^0.163.0"
   }
 }
