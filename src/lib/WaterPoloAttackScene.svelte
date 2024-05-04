@@ -107,8 +107,7 @@
                 textureWidth: 512,
                 textureHeight: 512,
                 waterNormals: new THREE.TextureLoader()
-                    .setPath('/src/assets/')
-                    .load('textures/waternormals.jpg', texture => {
+                    .load('/assets/textures/waternormals.jpg', texture => {
                         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
                     }),
                 sunDirection: new THREE.Vector3(),
@@ -164,8 +163,7 @@
         
         // Ūdenspolo bumba:
         new GLTFLoader()
-            .setPath('/src/assets/models/')
-            .load('waterpolo_ball_FINAL_v2.glb', (gltf) => {
+            .load('/assets/models/waterpolo_ball_FINAL_v2.glb', (gltf) => {
                 waterPoloBall = gltf.scene;
                 waterPoloBall.scale.set(0.1, 0.1, 0.1);
                 scene.add(waterPoloBall);
@@ -176,8 +174,7 @@
         
         // Ūdenspolo vārti:
         new FBXLoader()
-            .setPath('/src/assets/models/')
-            .load('water_polo_goal_FINAL.fbx', (gltf) => {
+            .load('/assets/models/water_polo_goal_FINAL.fbx', (gltf) => {
                 waterPoloGoalNet = gltf;
                 waterPoloGoalNet.scale.set(0.01, 0.01, 0.01);
                 scene.add(waterPoloGoalNet);
