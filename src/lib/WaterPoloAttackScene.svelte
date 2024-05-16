@@ -68,7 +68,7 @@
 
         // Apgaismojuma uzstādīšana:
         const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-        directionalLight.position.set(0, 100, 100);
+        directionalLight.position.set(40, 100, 100);
         scene.add(directionalLight);
 
         // Saule:
