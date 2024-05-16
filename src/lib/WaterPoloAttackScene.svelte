@@ -163,7 +163,7 @@
         
         // Ūdenspolo bumba:
         new GLTFLoader()
-            .load('/assets/models/waterpolo_ball_FINAL_v2.glb', (gltf) => {
+            .load('/assets/models/soccer_ball.glb', (gltf) => {
                 waterPoloBall = gltf.scene;
                 waterPoloBall.scale.set(0.1, 0.1, 0.1);
                 scene.add(waterPoloBall);
