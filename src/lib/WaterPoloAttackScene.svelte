@@ -56,7 +56,7 @@
 
         // Perspektīvas skata uzstādīšana un novietošana:
         camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 1, 20000);
-        camera.position.set(30, 30, 100);
+        camera.position.set(50, -20, 8);
 
         // Kameras kustības noteikšana:
         controls = new OrbitControls(camera, renderer.domElement);
